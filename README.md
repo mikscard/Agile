@@ -8,8 +8,8 @@ Step 2: Open a Command Prompt and go to the cloned directory. EG. "D:\dev\Python
 Step 3: Enter the following command in chronological order: <br>
         <t>1. "python manage.py makemigrations agile"<br>
     +    2. "python manage.py migrate"<br>
-        3. "py manage.py loaddata load_data_to_db.json"<br>
-        4. "python manage.py shell"<br>
+    *    3. "py manage.py loaddata load_data_to_db.json"<br>
+    <space>   4. "python manage.py shell"<br>
         5. "from django.contrib.auth.models import User"<br>
         6. "User.objects.create_user('testuser', 'testuser@example.com', 'opensesame')"<br>
         7. "python manage.py createsuperuser --username=admin --email=admin@example.com"<br>
