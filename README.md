@@ -13,7 +13,7 @@ Step 3: Enter the following command in chronological order: <br><pre>
         5. "from django.contrib.auth.models import User"<br>
         6. "User.objects.create_user('testuser', 'testuser@example.com', 'opensesame')"<br>
         7. "python manage.py createsuperuser --username=admin --email=admin@example.com"<br>
-        8. "python manage.py runserver"</pre><br>
+        8. "python manage.py runserver"</pre>
 Step 5: Open a browser and type "http://127.0.0.1:8000/"<br>
 
 WELCOME TO THE HOME PAGE! :)
