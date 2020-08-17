@@ -1,0 +1,52 @@
+{% load static %}
+<html>
+
+{% block content %}
+<body>
+  <h1>Values</h1>
+ {% if value_list %}
+
+ <div class="row">
+   <div class="col">
+    <ul class="list-group">
+       {% for value in value_list %}
+         <li class = "list-group-item">
+               {{ value.value_text }}
+             <div class="float-right">
+               <form action="delete_value/{{value.id}}" method="post">
+                 {% csrf_token %}
+                 <button type="submit" class="btn btn-danger btn-sm ">Delete</button>
+               </form>
+             </div>
+             <form action="update_value/{{value.id}}" class="form-inline" method="post">
+                 {% csrf_token %}
+                 <input name="content" class="form-control form-control mb-2 mr-sm-2" type="text" placeholder="Update text here">
+                 <div class="float-right">
+                   <button type="submit" class="btn btn-primary btn-sm ">Update</button>
+                 </div>
+             </form>
+
+         </li>
+
+  {% endfor %}
+     </ul>
+   </div>
+ </div>
+
+{% else %}
+ <p>Please input an Agile Value.</p>
+{% endif %}
+
+</body>
+
+  <div class="row">
+   <div class="col">
+     <form action="add_value/" class="form-in-line" method="post">
+       {% csrf_token %}
+      <input type="text" name="content" class="form-control mb-2 mr-sm-2" placeholder="Type agile value here...">
+      <button type="submit" class="btn btn-primary mb-2">Submit</button>
+     </form>
+   </div>
+  </div>
+  {% endblock %}
+</html>

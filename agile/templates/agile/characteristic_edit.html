@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+{% load static %}
+<html>
+
+{% block content %}
+<body>
+<h1>Characteristics</h1>
+ {% if characteristic_list %}
+
+ <div class="row">
+   <div class="col">
+    <ul class="list-group">
+       {% for characteristic in characteristic_list %}
+         <li class = "list-group-item">
+               {{ characteristic.characteristic_text }}
+             <div class="float-right">
+               <form action="delete_characteristic/{{characteristic.id}}" method="post">
+                 {% csrf_token %}
+                 <button type="submit" class="btn btn-danger btn-sm ">Delete</button>
+               </form>
+             </div>
+             <form action="update_characteristic/{{characteristic.id}}" class="form-inline" method="post">
+                 {% csrf_token %}
+                 <input name="content" class="form-control form-control mb-2 mr-sm-2" type="text" placeholder="Update text here">
+                 <div class="float-right">
+                   <button type="submit" class="btn btn-primary btn-sm ">Update</button>
+                 </div>
+             </form>
+
+         </li>
+
+  {% endfor %}
+     </ul>
+   </div>
+ </div>
+
+{% else %}
+ <p>Please input an Agile Characteristic.</p>
+{% endif %}
+
+</body>
+
+  <div class="row">
+   <div class="col">
+     <form action="add_characteristic/" class="form-in-line" method="post">
+       {% csrf_token %}
+      <input type="text" name="content" class="form-control mb-2 mr-sm-2" placeholder="Type agile characteristic here...">
+      <button type="submit" class="btn btn-primary mb-2">Submit</button>
+     </form>
+   </div>
+  </div>
+
+
+{% endblock %}
+</html>

@@ -1,0 +1,114 @@
+[
+  {
+    "model": "agile.Value",
+    "pk": 1,
+    "fields": {
+      "value_text": "Individuals and interactions over processes and tools."
+    }
+  },
+  {
+    "model": "agile.Value",
+    "pk": 2,
+    "fields": {
+      "value_text": "Working software over comprehensive documentation."
+    }
+  },
+  {
+    "model": "agile.Value",
+    "pk": 3,
+    "fields": {
+      "value_text": "Customer collaboration over contract negotiation."
+    }
+  },
+  {
+    "model": "agile.Value",
+    "pk": 4,
+    "fields": {
+      "value_text": "Responding to change over following a plan."
+    }
+  },
+  {
+    "model": "agile.Characteristic",
+    "pk": 1,
+    "fields": {
+      "characteristic_text": "Satisfying customers through early and continuous delivery of valuable work."
+    }
+  },
+  {
+    "model": "agile.Characteristic",
+    "pk": 2,
+    "fields": {
+      "characteristic_text": "Breaking big work down into smaller tasks that can be completed quickly."
+    }
+  },
+  {
+    "model": "agile.Characteristic",
+    "pk": 3,
+    "fields": {
+      "characteristic_text": "Recognizing that the best work emerges from self-organized teams."
+    }
+  },
+  {
+    "model": "agile.Characteristic",
+    "pk": 4,
+    "fields": {
+      "characteristic_text": "Providing motivated individuals with the environment and support they need and trusting them to get the job done."
+    }
+  },
+  {
+    "model": "agile.Characteristic",
+    "pk": 5,
+    "fields": {
+      "characteristic_text": "Creating processes that promote sustainable efforts."
+    }
+  },
+  {
+    "model": "agile.Characteristic",
+    "pk": 6,
+    "fields": {
+      "characteristic_text": "Maintaining a constant pace for completed work."
+    }
+  },
+  {
+    "model": "agile.Characteristic",
+    "pk": 7,
+    "fields": {
+      "characteristic_text": "Welcoming changing requirements, even late in a project."
+    }
+  },
+  {
+    "model": "agile.Characteristic",
+    "pk": 8,
+    "fields": {
+      "characteristic_text": "Assembling the project team and business owners on a daily basis throughout the project."
+    }
+  },
+  {
+    "model": "agile.Characteristic",
+    "pk": 9,
+    "fields": {
+      "characteristic_text": "Having the team reflect at regular intervals on how to become more effective, then tuning and adjusting behavior accordingly."
+    }
+  },
+  {
+    "model": "agile.Characteristic",
+    "pk": 10,
+    "fields": {
+      "characteristic_text": "Measuring progress by the amount of completed work."
+    }
+  },
+  {
+    "model": "agile.Characteristic",
+    "pk": 11,
+    "fields": {
+      "characteristic_text": "Continually seeking excellence."
+    }
+  },
+  {
+    "model": "agile.Characteristic",
+    "pk": 12,
+    "fields": {
+      "characteristic_text": "Harnessing change for a competitive advantage."
+    }
+  }
+]
