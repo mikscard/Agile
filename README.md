@@ -1,9 +1,9 @@
 # Screening-Task
 # A Django Web App with ability to CRUD Agile Values and Characteristics.
 
-Get Started:
+Get Started:<br>
 
-Step 1: Clone the repository into your local directory
+Step 1: Clone the repository into your local directory<br>
 Step 2: Open a Command Prompt and go to the cloned directory. EG. "D:\dev\Python\Screening-Task-master>"
 Step 3: Enter the following command in chronological order: 
         1. "python manage.py makemigrations agile"
