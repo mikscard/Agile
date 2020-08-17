@@ -1,2 +1,19 @@
 # Screening-Task
 # A Django Web App with ability to CRUD Agile Values and Characteristics.
+
+Get Started:
+
+Step 1: Clone the repository into your local directory
+Step 2: Open a Command Prompt and go to the cloned directory. EG. "D:\dev\Python\Screening-Task-master>"
+Step 3: Enter the following command in chronological order: 
+        1. "python manage.py makemigrations agile"
+        2. "python manage.py migrate"
+        3. "py manage.py loaddata load_data_to_db.json"
+        4. "python manage.py shell"
+        5. "from django.contrib.auth.models import User"
+        6. "User.objects.create_user('testuser', 'testuser@example.com', 'opensesame')"
+        7. "python manage.py createsuperuser --username=admin --email=admin@example.com"
+        8. "python manage.py runserver"
+Step 5: Open a browser and type "http://127.0.0.1:8000/"
+
+WELCOME TO THE HOME PAGE! :)
