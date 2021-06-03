@@ -19,7 +19,7 @@ class UserViewTests(TestCase):
             username="testuser", email="keembasilio@gmail.com", password="secret_pw"
         )
 
-    # Testing viewing of IndexView with an account which should have response code 200
+    # Testing123 viewing of IndexView with an account which should have response code 200
     def test_index_view_authenticated(self):
         request = self.factory.get("/agile/")
         request.user = self.user
